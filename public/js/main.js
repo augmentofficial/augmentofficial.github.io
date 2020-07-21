@@ -204,9 +204,7 @@
 		$('.ftco-animate').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
 				i++;
-
 				$(this.element).addClass('item-animate');
 				setTimeout(function(){
 
@@ -226,16 +224,11 @@
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-					
-				}, 100);
-				
+				}, 100);	
 			}
-
 		} , { offset: '95%' } );
 	};
 	contentWayPoint();
-
-
 
 	// magnific popup
 	$('.image-popup').magnificPopup({
@@ -267,28 +260,33 @@
 
     fixedContentPos: false
   });
-
-
 })(jQuery);
 
+
+
+// TODO: Impelement LinkedIn API endpoints to get Posts
+// Request should be like: https://api.linkedin.com/v2/shares?q=owners&owners=urn:li:organization:10239645&oauth2_access_token=
 /*
 $.ajax({
-    type: "GET",
-    url: "https://www.googleapis.com/youtube/v3/search?part=id,snippet&eventType=completed&channelId=&type=video&key=AIzaSyDYkWks3iwd2P7KWCNYUQpxCyz4JVsTlxs",
-   
-    async: true,
-    crossDomain: true,
-    dataType : 'JSON',
-    success: function(data){
-		$.each(data.items,
-            function(i,item)
-            { 
-				var app = 
-				'<div>\
-					<iframe src="https://www.youtube.com/embed/'+item.id.videoId+'" width="100%" height="auto" allowfullscreen></iframe>\
-				</div>';
-                $('.container').append(app);
-        }); 
+    url: "/url/is/here",
+    method: "POST",
+    data : {
+        data : "what you want to send",
+        put : "them here"
+    },
+    cache : false,
+    success : function (data) {
+        // data is the object that you send form the server by 
+        // res.jsonp();
+        // here data = {success : true}
+        // validate it
+        if(data['success']){
+            alert("message you want to show");
+        }
+    },
+    error : function () {
+        // some error handling part
+        alert("Oops! Something went wrong.");
     }
-  });
+});
 */
