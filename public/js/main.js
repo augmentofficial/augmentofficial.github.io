@@ -262,69 +262,31 @@
   });
 })(jQuery);
 
-/*
-$("#submit_button").click(function(event) {
-    event.preventDefault();
-    console.log("Hi: ", $("#email").val());
 
-    var request = new Request("https://us10.api.mailchimp.com/3.0/lists/5f07db754c/members/", {
-    					method: "POST",
-    					mode: "no-cors",
-    					json: {
-    						"email_address": $("#email").val(),
-    						"status": "subscribed",
-    					},
-    					redirect: "follow",
-    					headers: new Headers({
-    						"Content-Type": "application/json",
-    						"Authorization": "b37eb1abf1730f2bc0c3753a06425ded-us10"
-    					}),
-    					auth: {
-    						"user": "anystring",
-    						"pass": "b37eb1abf1730f2bc0c3753a06425ded-us10"
-    					}
-    				});
-    fetch(request).then(function(data) {
-    	console.log("Data = ", data);
-    })
-    /*
-    $.ajax({
-      type: "POST",
-      url: "https://augmentofficial.us10.list-manage.com/subscribe/post?u=376c2bd98208b8d5fd5e3a97a&amp;id=5f07db754c",
-      dataType: "jsonp",
-      data: {
-        "EMAIL": $("#email").val()
-      },
-      success: function(data) {
-        console.log(data);
-        alert("Subscribed!");
-      },
-      error: function() {
-        alert("Cannot subscribe");
-      }
-    });
-  });
-// b37eb1abf1730f2bc0c3753a06425ded-us10
-// 5f07db754c
-*/
+
+// TODO: Impelement LinkedIn API endpoints to get Posts
+// Request should be like: https://api.linkedin.com/v2/shares?q=owners&owners=urn:li:organization:10239645&oauth2_access_token=
 /*
 $.ajax({
-    type: "GET",
-    url: "https://www.googleapis.com/youtube/v3/search?part=id,snippet&eventType=completed&channelId=&type=video&key=AIzaSyDYkWks3iwd2P7KWCNYUQpxCyz4JVsTlxs",
-   
-    async: true,
-    crossDomain: true,
-    dataType : 'JSON',
-    success: function(data){
-		$.each(data.items,
-            function(i,item)
-            { 
-				var app = 
-				'<div>\
-					<iframe src="https://www.youtube.com/embed/'+item.id.videoId+'" width="100%" height="auto" allowfullscreen></iframe>\
-				</div>';
-                $('.container').append(app);
-        }); 
+    url: "/url/is/here",
+    method: "POST",
+    data : {
+        data : "what you want to send",
+        put : "them here"
+    },
+    cache : false,
+    success : function (data) {
+        // data is the object that you send form the server by 
+        // res.jsonp();
+        // here data = {success : true}
+        // validate it
+        if(data['success']){
+            alert("message you want to show");
+        }
+    },
+    error : function () {
+        // some error handling part
+        alert("Oops! Something went wrong.");
     }
-  });
+});
 */
