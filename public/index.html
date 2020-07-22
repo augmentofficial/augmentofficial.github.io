@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/ionicons.min.css">
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -35,9 +37,9 @@
     
     <nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><i>AUGMENT</i></a>
+        <!-- <a class="navbar-brand" href="index.html"><i>AUGMENT</i></a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu" style="color: black;"></span> <span style="color: black;"> Menu</span>
+          <span class="oi oi-menu" style="color:black;"></span> <span style="color: black;"> Menu</span>
         </button>
 
         <div class="collapse navbar-collapse" id="ftco-nav">
@@ -63,10 +65,12 @@
     </nav>
     <!-- END nav -->
     
+  <section class="landing">
     <div class="hero-wrap js-fullheight" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-12 ftco-animate">
+            <br><br>
             <h2 class="subheading" style="font-family: Poppins; font-style: normal; font-weight: normal; font-size: 16px; line-height: 24px; color: #202020;">Hey! Welcome to</h2>
             <h1 style="font-family: Poppins; font-style: normal; font-weight: bold; font-size: 84px; line-height: 126px; color: #272727;" class="mb-4 mb-md-0">AUGMENT</h1>
             <div class="row">
@@ -77,11 +81,10 @@
                   <br>
                   <p style="font-family: Poppins; font-style: normal; font-size: 16px; line-height: 24px; color: #272727;"><strong>Elevate your career.</strong> Be the first to know about career events and resources👇</p>
                   <form class="myform" method="POST" action="/submit-form">
-                      <input class="input" type="email" name="email" id="email" placeholder="&nbsp; &nbsp; email@example.com" style="width: 371px; height: 32px; left: 80px; top: 506px; background: #FCFCFC; border: 1px solid #606060; box-sizing: border-box; border-radius: 4px; display: inline; float:left;">
-                      <button class="button-primary" id="submit_button" type="submit" type="submit" style="display: flex; flex-direction: row; padding: 4px 32px; position: relative;background: linear-gradient(105.33deg, #C71BDC -9.12%, #751296 100%); border-radius: 4px; display:inline;float:left;">
-                        <p style="position: static; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 16px; line-height: 24px; color: #FFFFFF; flex: none; order: 0; align-self: center; margin: 0px 0px;">Submit</p></button>
-                      </form>
-                      <div id="message"></div>
+                      <input class="input" type="email" name="email" id="email" placeholder="&nbsp; &nbsp; email@example.com" style="width: 371px; height: 32px; left: 80px; top: 506px; background: #FCFCFC; border: 1px solid #606060; box-sizing: border-box; border-radius: 4px; display: inline; float:left;" required>
+                      <button class="button-primary" id="submit_button" type="submit" type="submit" style="display: flex; flex-direction: row; padding: 0px 32px; position: relative;background: linear-gradient(105.33deg, #C71BDC -9.12%, #751296 100%);color:white;font-weight:bold;border-radius: 4px; display:inline;">Submit
+                      </button>
+                    </form>
                 </div>
               </div>
               <div class="col-md-5">
@@ -92,19 +95,220 @@
         </div>
       </div>
     </div>
+  </section>
 
     <section class="events">
       <div class="container">
         <div class="mb-4 mb-md-0">
           <div class="heading-section ftco-animate">
-            <h2 class="mb-4" style="position: static; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 28px; line-height: 42px; color: #000000; flex: none; order: 0; align-self: center; margin: 24px 0px; display:inline;">Events</h2>
+            <h2 class="mb-4" style="font-family: Poppins; font-style: normal; font-weight: bold; font-size: 28px; line-height: 42px; color: #000000; flex: none; order: 0; align-self: center; margin: 24px 0px; display:inline;">Events</h2>
             &nbsp; &nbsp; &nbsp;
-            <a href="events.html" style="position: static; font-family: Poppins; font-style: normal; font-weight: bold; font-size: 20px; line-height: 30px; display: flex; align-items: flex-end; text-decoration-line: underline; color: #673AA2; flex: none; order: 1; align-self: center; margin: 24px 0px; display:inline;">See all events ></a>
+            <a href="events.html" style="font-family: Poppins; font-style: normal; font-weight: bold; font-size: 20px; line-height: 30px; display: flex; align-items: flex-end; text-decoration-line: underline; color: #673AA2; flex: none; order: 1; align-self: center; margin: 24px 0px; display:inline;">See all events ></a>
+          </div>
+        </div>
+        <br>
+
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <div class="d-flex align-items-center">
+                      <div class="bg-img" style="width: 392px; height: 100%;">
+                        <img src="images/events.png" class="card-image">
+                        <h4 style="height:80px;text-align: center;font-family:Poppins;font-size:20px;font-style:normal;font-weight:bold;line-height:30px;color:black;">The Unspoken Rules for Landing Internships (ft. InternMakers)</h4>
+                        <p class="events-text">
+                          <i class="fa fa-clock-o" style="color: black;"></i>
+                          July 2, 2020, 6:00PM - 7:00PM PDT
+                        </p>
+                        <button class="events-button">RSVP &#8226; Less than 24 hours left!</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <div class="d-flex align-items-center">
+                      <div class="bg-img" style="width: 392px; height: 100%;">
+                        <img src="images/events.png" class="card-image">
+                        <h4 style="height:80px;text-align: center;font-family:Poppins;font-size:20px;font-style:normal;font-weight:bold;line-height:30px;color:black;">Big Tech Weekend</h4>
+                        <p class="events-text">
+                          <i class="fa fa-clock-o" style="color: black;"></i>
+                          This event has ended
+                        </p>
+                        <div style="height:40px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <div class="d-flex align-items-center">
+                      <div class="bg-img" style="width: 392px; height: 100%;">
+                        <img src="images/events.png" class="card-image">
+                        <h4 style="height:80px;text-align: center;font-family:Poppins;font-size:20px;font-style:normal;font-weight:bold;line-height:30px;color:black;">Augment Event</h4>
+                        <p class="events-text">
+                          <i class="fa fa-clock-o" style="color: black;"></i>
+                          July 2, 2020, 6:00PM - 7:00PM PDT
+                        </p>
+                        <button class="events-button">RSVP Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <div class="d-flex align-items-center">
+                      <div class="bg-img" style="width: 392px; height: 100%;">
+                        <img src="images/events.png" class="card-image">
+                        <h4 style="height:80px;text-align: center;font-family:Poppins;font-size:20px;font-style:normal;font-weight:bold;line-height:30px;color:black;">The Unspoken Rules for Landing Internships (ft. InternMakers)</h4>
+                        <p class="events-text">
+                          <i class="fa fa-clock-o" style="color: black;"></i>
+                          July 2, 2020, 6:00PM - 7:00PM PDT
+                        </p>
+                        <button class="events-button">RSVP Now</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="articles">
+      <div class="container">
+        <div class="mb-4 mb-md-0">
+          <div class="heading-section ftco-animate">
+            <h2 class="mb-4" style="font-family: Poppins; font-style: normal; font-weight: bold; font-size: 28px; line-height: 42px; color: #000000; flex: none; order: 0; align-self: center; margin: 24px 0px; display:inline;">Articles</h2>
+            &nbsp; &nbsp; &nbsp;
+            <a href="blog.html" style="font-family: Poppins; font-style: normal; font-weight: bold; font-size: 20px; line-height: 30px; display: flex; align-items: flex-end; text-decoration-line: underline; color: #673AA2; flex: none; order: 1; align-self: center; margin: 24px 0px; display:inline;">See all articles ></a>
+          </div>
+        </div>
+        <br>
+
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <div class="d-flex align-items-center">
+                      <div class="blog-entry justify-content-end" style="width: 392px;height:578px;">
+                        <a href="https://medium.com/augment-official/the-postmortem-tesla-3-4-84c8ea62815f?source=collection_home---4------0-----------------------" class="block-20" style="background-image: url('images/tesla.jpeg');width:392px;height:263px;">
+                        </a>
+                        <div class="text p-4 float-right d-block">
+                          <div class="topper d-flex align-items-center">
+                            <div class="one py-2 pl-3 pr-1 align-self-stretch">
+                              <span class="day" style="color: white;font-weight:400;">29</span>
+                            </div>
+                            <div class="two pl-0 pr-3 py-2 align-self-stretch">
+                              <span class="yr" style="color: white;">2020</span>
+                              <span class="mos" style="color: white;">May</span>
+                            </div>
+                          </div>
+                          <h3><a href="https://medium.com/augment-official/the-postmortem-tesla-3-4-84c8ea62815f?source=collection_home---4------0-----------------------" style="color:black;text-align:center;font-weight:bold;font-size:19px;">The Postmortem: Tesla (3/4)</a></h3>
+                          <p class="article-text">Thoughts on 4 months as part of the Energy Products Software team at Tesla.</p>
+                          <p><a href="https://medium.com/augment-official/the-postmortem-tesla-3-4-84c8ea62815f?source=collection_home---4------0-----------------------" style="font-weight:bold;text-decoration:underline;">Read more (9 min read) ></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <div class="d-flex align-items-center">
+                      <div class="blog-entry justify-content-end" style="width: 392px;height:578px;">
+                        <a href="https://medium.com/augment-official/break-into-pm-from-a-non-tech-background-from-a-salesforce-pm-intern-marketing-major-f63fd04b8ce?source=collection_home---4------1-----------------------" class="block-20" style="background-image: url('images/grace.png');width:392px;height:263px;">
+                        </a>
+                        <div class="text p-4 float-right d-block">
+                          <div class="topper d-flex align-items-center">
+                            <div class="one py-2 pl-3 pr-1 align-self-stretch">
+                              <span class="day" style="color: white;font-weight:400;">28</span>
+                            </div>
+                            <div class="two pl-0 pr-3 py-2 align-self-stretch">
+                              <span class="yr" style="color: white;">2020</span>
+                              <span class="mos" style="color: white;">May</span>
+                            </div>
+                          </div>
+                          <h3><a href="https://medium.com/augment-official/break-into-pm-from-a-non-tech-background-from-a-salesforce-pm-intern-marketing-major-f63fd04b8ce?source=collection_home---4------1-----------------------" style="color:black;text-align:center;font-weight:bold;font-size:19px;">Break Into PM from a Non-Tech Background (from a Salesforce PM Intern & Marketing Major)</a></h3>
+                          <p class="article-text">As a Business Marketing major at Northeastern University, Current Product Manager Intern at Salesforce...</p>
+                          <p><a href="https://medium.com/augment-official/break-into-pm-from-a-non-tech-background-from-a-salesforce-pm-intern-marketing-major-f63fd04b8ce?source=collection_home---4------1-----------------------" style="font-weight:bold;text-decoration:underline;">Read more (21 min read) ></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <div class="d-flex align-items-center">
+                      <div class="blog-entry justify-content-end" style="width: 392px;height:578px;">
+                        <a href="https://medium.com/augment-official/succeeding-in-remote-internships-week-1-26bb48ae39f2" class="block-20" style="background-image: url('images/remote.jpeg');width:392px;height:263px;">
+                        </a>
+                        <div class="text p-4 float-right d-block">
+                          <div class="topper d-flex align-items-center">
+                            <div class="one py-2 pl-3 pr-1 align-self-stretch">
+                              <span class="day" style="color: white;font-weight:400;">18</span>
+                            </div>
+                            <div class="two pl-0 pr-3 py-2 align-self-stretch">
+                              <span class="yr" style="color: white;">2020</span>
+                              <span class="mos" style="color: white;">May</span>
+                            </div>
+                          </div>
+                          <h3><a href="https://medium.com/augment-official/succeeding-in-remote-internships-week-1-26bb48ae39f2" style="color:black;text-align:center;font-weight:bold;font-size:19px;">Succeeding in Remote Internships : Week 1 🏡</a></h3>
+                          <p class="article-text">Due to the COVID-19 pandemic, many companies have shifted to remote and virtual internships for this coming summer. Performing well in an in-person internship...</p>
+                          <p><a href="https://medium.com/augment-official/succeeding-in-remote-internships-week-1-26bb48ae39f2" style="font-weight:bold;text-decoration:underline;">Read more (4 min read) ></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                  <div class="text">
+                    <div class="d-flex align-items-center">
+                      <div class="blog-entry justify-content-end" style="width: 392px;height:578px;">
+                        <a href="https://medium.com/augment-official/a-how-to-product-guide-for-machine-learning-8538e6901f10?source=collection_home---4------0-----------------------" class="block-20" style="background-image: url('images/guide.jpeg');width:392px;height:263px;">
+                        </a>
+                        <div class="text p-4 float-right d-block">
+                          <div class="topper d-flex align-items-center">
+                            <div class="one py-2 pl-3 pr-1 align-self-stretch">
+                              <span class="day" style="color: white;font-weight:400;">09</span>
+                            </div>
+                            <div class="two pl-0 pr-3 py-2 align-self-stretch">
+                              <span class="yr" style="color: white;">2020</span>
+                              <span class="mos" style="color: white;">June</span>
+                            </div>
+                          </div>
+                          <h3><a href="https://medium.com/augment-official/a-how-to-product-guide-for-machine-learning-8538e6901f10?source=collection_home---4------0-----------------------" style="color:black;text-align:center;font-weight:bold;font-size:19px;">A “How To Product Guide” for Machine Learning</a></h3>
+                          <p class="article-text">Does it really change how a team works if the product involves machine learning?” The short answer is yes!</p>
+                          <p><a href="https://medium.com/augment-official/a-how-to-product-guide-for-machine-learning-8538e6901f10?source=collection_home---4------0-----------------------" style="font-weight:bold;text-decoration:underline;">Read more (6 min read) ></a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
     <section class="ftco-section testimony-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
@@ -274,8 +478,11 @@
         </div>
       </div>
     </section>
+    -->
+
 
     <!-- team-area -->
+    <!--
             <section class="team-area pt-110 pb-90">
                 <div class="container">
                     <div class="row align-items-center mb-45">
@@ -414,8 +621,9 @@
                     </div>
                 </div>
             </section>
-            <br><br><br>
+          -->
 
+    <!--
     <section class="ftco-section">
       <div class="container">
         <div class="row">
@@ -614,7 +822,6 @@
         </div>
       </div>
     </section>
-        <!--
         <div class="row mt-5">
           <div class="col text-center">
             <div class="block-27">
