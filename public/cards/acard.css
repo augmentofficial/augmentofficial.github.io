@@ -1,48 +1,127 @@
 .card {
-    border: 1px solid #FFFFFF;
-    position: absolute;
-    width: 392px;
-    height: 578px;
-    left: 80px;
-    top: 506px;
+  position: absolute;
+  width: 392px;
+  height: 578px;
+  left: 80px;
+  top: 478px;
   
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  
+  }
+
+.header {
+    position: static;
+    width: 360px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    
+    color: #000000;
+    
+    
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 0px 12px;
+
+    padding-top:12px;
+    padding-bottom:12px;
+  }
+  
+.secondary {
+    position: static;
+    width: 360px;
+    height: 72px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    
+    color: #606060;
+    
+    
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 6px 0px;
+
+    padding-bottom:16px;
   
   }
   
-  .bg-img {
-    background: url(Checker.png);
-    background-size: cover;
+  
+.bg-img {
+    object-fit: cover;
     min-height: 180px;
     background-position: center;
     background-color: #FFFFFF;
+    border-radius: 8px 8px 0px 0px;
   }
   
-  .content {
-    padding: 15px;
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+
     position: static;
-    width: 336px;
-    height: 24px;
-    left: 22px;
+    width: 360px;
+    height: 144px;
+    left: 0px;
     top: 0px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 0px 16px;
+
+    line-height:100%;
+    text-align:left;
+    vertical-align:Top;
   }
   
-  button {
+.link {
     position: static;
     width: 360px;
     height: 24px;
     left: 0px;
-    top: 238px;
-
+    top: 160px;
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    
+    color: #673AA2;
+    
+    
     /* Inside Auto Layout */
     flex: none;
     order: 1;
-    align-self: left;
+    align-self: center;
     margin: 0px 16px;
   }
   
-  .grid-container {
+.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
