@@ -1,0 +1,33 @@
+.arrow {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: 1324px;
+    top: 666px;
+  
+  }
+  
+  .text {
+    position: absolute;
+    width: 49px;
+    height: 30px;
+    left: 1259px;
+    top: 668px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #202020;
+
+  }
+
+  .content {
+    position: absolute;
+    width: 101px;
+    height: 36px;
+    left: 1259px;
+    top: 666px;
+  }
